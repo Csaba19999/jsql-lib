@@ -1,7 +1,7 @@
-import { jssql } from "../main";
+import { jsql } from "../lib/main";
 import { usersArray } from "./test-array";
 
-const result = jssql(usersArray)
+const result = jsql(usersArray)
   .select(["name", "age", "address.city"])
   .execute();
 

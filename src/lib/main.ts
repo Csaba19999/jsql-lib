@@ -1,4 +1,4 @@
-import { IUser } from "./test/test-array";
+import { IUser } from "../test/test-array";
 
 type Aggregation = {
   type: "count" | "max";
@@ -57,7 +57,7 @@ const setNestedValue = (obj: any, path: string, value: any): void => {
   });
 };
 
-export function jssql(input: IUser[]): State {
+export function jsql(input: IUser[]): State {
   const state: State = {
     rawInput: input,
     selectedFields: [],
